@@ -1,0 +1,392 @@
+body{
+    background: #fff;
+    position: relative;
+}
+
+@font-face{
+    font-family: Bozon;
+    src: url("../fonts/Bozon.otf");
+}
+
+a{
+    color: #000;
+    text-decoration: none !important;
+    font-family: Bozon;
+}
+
+a:hover{
+    color: #2E4052;
+}
+
+.section-title{
+    position: relative;
+    padding: 20px 0;
+}
+
+.section-title h3{
+    color: #2E4052;
+    margin: 10px 0;
+    text-align: center;
+    font-family: Bozon;
+    font-weight: 600;
+}
+
+
+/* ///////////// header and banner /////////////////// */
+
+#header{
+    position: relative;
+    width: 100%;
+}
+
+
+
+#header .navbar .nav-item{
+    padding: 0 35px;
+}
+
+#header .navbar .nav-item:last-child{
+    padding-right: 0;
+}
+
+#header .navbar .nav-item .nav-link{
+    font-weight: 600;
+}
+
+.banner-text{
+    padding-top: 240px;
+}
+
+.register, .login{
+    max-width: 180px;
+    margin: auto;
+}
+
+.register a, .login a{
+    display: block;
+    background: #2E4052;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.register a{
+    margin-top: 8px;
+    color: #99E4FF;
+    font-weight: 600;
+}
+.login a{
+    color: #EAFF47;
+    font-weight: 600;
+}
+
+.banner{
+    position: relative;
+    height: 100%;
+    min-height: 140vh;
+}
+
+.banner::after{
+    content: "";
+    background: url("../images/banner03.png") center no-repeat;
+    width: 100%;
+    height: 100%;
+    max-width: 650px;
+    min-height: 0;
+    position: absolute;
+    left: 50px;
+    right: 0;
+    top: 360px;
+}
+#header::before{
+    content: "";
+    background: url("../images/banner02.png") center no-repeat;
+    width: 100%;
+    height: 100%;
+    max-width: 604px;
+    min-height: 280px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#header::after{
+    content: "";
+    background: url("../images/banner01.png") center no-repeat;
+    width: 100%;
+    height: 100%;
+    max-width: 285px;
+    min-height: 605px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+/* ///////////////////////// functionality section start ///////////////////// */
+
+.functionality{
+    position: relative;
+    padding: 120px 0;
+    background: url("../images/function.png") center no-repeat;
+    background-size: cover;
+}
+
+.functionality .section-title h3{
+    color: #EAFF47;
+    padding-bottom: 20px;
+}
+
+.functionality .f-card{
+    background: transparent;
+    border: none;
+    text-align: center;
+    color: #fff;
+    padding: 20px 40px;
+}
+.functionality .f-card .card-header{
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    min-height: 200px;
+    height: 100%;
+    left: 621px;
+    top: 1217px;
+    background: #E5E5E5;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.functionality .f-card .card-title{
+    padding-top: 50px;
+}
+
+.functionality .f-card .card-title h5{
+    font-weight: 600;
+}
+
+.functionality .f-card .card-block{
+    padding-top: 15px;
+}
+
+.functionality .f-card .card-block p{
+    color: #e0e0e0;
+}
+
+
+
+/* /////////////////// pricing section css //////////////////// */
+
+.pricing-sec{
+    position: relative;
+    padding: 60px 0;
+}
+
+.pricing-card{
+    display: block;
+    padding: 30px;
+    width: 100%;
+    max-width: 420px;
+    height: 100%;
+    border: 10px solid #2E4052;
+    border-radius: 25px;
+    margin: auto;
+    background: #fff;
+}
+
+.pricing-sec .slide{
+    height: auto;
+    min-height: 650px !important;
+}
+
+.pricing-title{
+    padding: 20px 0;
+}
+
+.pricing-block{
+    font-size: 14px;
+}
+
+.pricing-img{
+    padding: 90px;
+    display: block;
+}
+
+.pricing-sec .carousel-indicators li{
+    background-color: #CDCDCD;
+    border-radius: 50%;
+    margin: 0 15px;
+    width: 15px;
+    height: 15px;
+}
+
+.pricing-sec .carousel-indicators .active{
+    background-color: #2E4052;
+}
+
+
+.pricing-sec::before{
+    content: "";
+    background: url("../images/pricing01.png") center no-repeat;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    position: absolute;
+    top: 225px;
+    max-height: 900px;
+}
+
+.pricing-sec::after{
+    content: "";
+    background: url("../images/pricing02.png") center no-repeat;
+    width: 100%;
+    height: 100%;
+    max-width: 497px;
+    min-height: 605px;
+    position: absolute;
+    right: 0;
+    bottom: 480px;
+    z-index: -1;
+}
+
+
+/* //////////////////// contact sec css start /////////// */
+
+.contact-sec{
+    position: relative;
+    padding-top: 30px;
+}
+
+.contact-sec .section-title{
+    padding-bottom: 80px;
+}
+
+.contact-sec .section-title h3{
+    text-align: left;
+    padding-left: 35px;
+}
+
+.contact-sec .form-control{
+    background: #2e4052;
+    color: #fff;
+    border-radius: 7px;
+}
+
+.contact-sec ::placeholder{
+    color: #bdbcbc;
+}
+
+
+/* /////////////// footer css start ////////////// */
+
+.footer-sec{
+    position: relative;
+    padding: 60px 0;
+    border-top: 1px solid #CDCDCD;
+}
+
+.footer-logo img{
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+}
+
+.footer-sec .social-link ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer-sec .social-link ul li a i {
+    color: #2E4052;
+    font-size: 26px;
+    text-shadow: 0px 4px 4px #0f253b75;
+}
+
+.footer-sec ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-sec .links ul li:first-child{padding-top: 0;}
+.footer-sec .links ul li{
+    padding: 5px 0;
+}
+
+.footer-sec .links ul li a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-sec .alignment{
+    text-align: right;
+}
+
+.footer-sec .pd-area{
+    padding: 0 50px;
+}
+
+.social-link{
+    padding: 30px 0;
+}
+
+
+/*Responsive css start here*/
+
+
+@media screen and (min-width: 300px) and (max-width: 480px){
+
+    #header::after{
+        top: 350px !important;
+    }
+
+    .banner::after{
+        display: none;
+    }
+
+    .navbar-brand img{
+        max-width: 180px;
+    }
+
+    .navbar-toggler-icon{
+        background: #2E4052;
+        width: 20px;
+        height: 3px;
+        margin: 3px 0;
+        display: block;
+    }
+
+    /* .navbar-collapse{
+        background: #fff;
+
+    } */
+
+    .banner-text {
+        padding-top: 60px;
+    }
+    .banner-content{
+        text-align: center;
+    }
+
+    .banner{
+        min-height: 100vh;
+    }
+    .footer-sec{
+        text-align: center;
+    }
+
+    .footer-sec .alignment{
+        text-align: center;
+    }
+
+    .pricing-sec .slide {
+        min-height: 545px !important;
+    }
+    
+    .pricing-img {
+    padding: 30px;}
+    .pricing-card{padding: 12px;}
+
+}
+
